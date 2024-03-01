@@ -1,0 +1,12 @@
+on: [ push ]
+
+jobs:
+  build: 
+    name: Hello World
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Easy
+        run: |
+          echo This is a test workflow file
+          echo very basic workflow for understanding
